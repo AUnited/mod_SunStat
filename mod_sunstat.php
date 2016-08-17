@@ -20,6 +20,9 @@
 # ga_ = Google
 # pwk_ = Piwik
 # li_ = LiveInternet
+# hl_ = Hotlog
+# rr_ = Rambler
+# os_ = OpenStat (SpyLog)
 
 // no direct access
 defined('_JEXEC') or die;
