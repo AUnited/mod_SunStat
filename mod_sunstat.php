@@ -1,8 +1,8 @@
 ﻿<?php
 # @version		$version 0.1 Amvis United Company Limited  $
-# @copyright	Copyright (C) 2012 AUnited Co Ltd. All rights reserved.
+# @copyright	Copyright (C) 2016 AUnited Co Ltd. All rights reserved.
 # @license		GNU/GPL, see LICENSE.php
-# Updated		18th June 2014
+# Updated		16th October 2016
 #
 # Site: http://amvis.ru
 # Email: info@amvis.ru
@@ -48,23 +48,22 @@ function MailRuCounter($mrid)
     $style[16] = array("base"=>256, "width"=>31, "height"=>38);
 
     $color = array(
-        1   =>"#000000",
-        2   =>"#000000",
+        1   =>"#777777",
+        2   =>"#333333",
         3   =>"#000000",
-        4   =>"#000000",
-        5   =>"#000000",
-        6   =>"#000000",
-        7   =>"#000000",
-        8   =>"#000000",
-        9   =>"#000000",
-        10  =>"#000000",
-        11  =>"#000000",
-        12  =>"#000000",
-        13  =>"#000000",
-        14  =>"#000000",
-        15  =>"#000000",
-        16  =>"#000000",
-        17  =>"#000000"
+        4   =>"#4c1f66",
+        5   =>"#c23066",
+        6   =>"#d4666d",
+        7   =>"#6e0a0a",
+        8   =>"#914900",
+        9   =>"#8a7807",
+        10  =>"#436925",
+        11  =>"#106e61",
+        12  =>"#185421",
+        13  =>"#197b94",
+        14  =>"#1e5d78",
+        15  =>"#54739c",
+        16  =>"#054a80"
     );
 
     $type=''; //17types*16 colors
