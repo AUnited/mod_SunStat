@@ -77,7 +77,7 @@ function MailRuCounter($mrid)
     }
     else
     {
-        return '<!-- RatingMail.ru logo --><a href="http://top.mail.ru/jump?from=' . $mrid . '"><img src="//top-fwz1.mail.ru/counter?id=' . $mrid . ';t=' . $type . ';l=1" style="border:0;" height="' . $height . '" width="' . $width . '" alt="Рейтинг@Mail.ru" /></a><!-- //Rating@Mail.ru logo -->'
+        return '<!-- RatingMail.ru logo --><a href="http://top.mail.ru/jump?from=' . $mrid . '"><img src="//top-fwz1.mail.ru/counter?id=' . $mrid . ';t=' . $type . ';l=1" style="border:0;" height="' . $height . '" width="' . $width . '" alt="Рейтинг@Mail.ru" /></a><!-- //Rating@Mail.ru logo -->';
     }
 }
 
