@@ -30,40 +30,40 @@ $exit = "У Вас нет счетчиков";
 
 function MailRuCounter($mrid)
 {
-    $style[1] = array("base" => 600, "width" => 88, "height" => 40);
-    $style[2] = array("base" => 578, "width" => 88, "height" => 40);
-    $style[3] = array("base" => 555, "width" => 88, "height" => 40);
-    $style[4] = array("base" => 532, "width" => 88, "height" => 40);
-    $style[5] = array("base" => 509, "width" => 88, "height" => 31);
-    $style[6] = array("base" => 486, "width" => 88, "height" => 31);
-    $style[7] = array("base" => 463, "width" => 88, "height" => 31);
-    $style[8] = array("base" => 440, "width" => 88, "height" => 31);
-    $style[9] = array("base" => 417, "width" => 88, "height" => 31);
-    $style[10] = array("base" => 394, "width" => 88, "height" => 31);
-    $style[11] = array("base" => 371, "width" => 88, "height" => 18);
-    $style[12] = array("base" => 348, "width" => 88, "height" => 18);
-    $style[13] = array("base" => 325, "width" => 88, "height" => 18);
-    $style[14] = array("base" => 302, "width" => 88, "height" => 15);
-    $style[15] = array("base" => 279, "width" => 31, "height" => 38);
-    $style[16] = array("base" => 256, "width" => 31, "height" => 38);
+    $style[1]   = array("base" => 600, "width" => 88, "height" => 40);
+    $style[2]   = array("base" => 578, "width" => 88, "height" => 40);
+    $style[3]   = array("base" => 555, "width" => 88, "height" => 40);
+    $style[4]   = array("base" => 532, "width" => 88, "height" => 40);
+    $style[5]   = array("base" => 509, "width" => 88, "height" => 31);
+    $style[6]   = array("base" => 486, "width" => 88, "height" => 31);
+    $style[7]   = array("base" => 463, "width" => 88, "height" => 31);
+    $style[8]   = array("base" => 440, "width" => 88, "height" => 31);
+    $style[9]   = array("base" => 417, "width" => 88, "height" => 31);
+    $style[10]  = array("base" => 394, "width" => 88, "height" => 31);
+    $style[11]  = array("base" => 371, "width" => 88, "height" => 18);
+    $style[12]  = array("base" => 348, "width" => 88, "height" => 18);
+    $style[13]  = array("base" => 325, "width" => 88, "height" => 18);
+    $style[14]  = array("base" => 302, "width" => 88, "height" => 15);
+    $style[15]  = array("base" => 279, "width" => 31, "height" => 38);
+    $style[16]  = array("base" => 256, "width" => 31, "height" => 38);
 
     $color = array(
-        1 => "#777777",
-        2 => "#333333",
-        3 => "#000000",
-        4 => "#4c1f66",
-        5 => "#c23066",
-        6 => "#d4666d",
-        7 => "#6e0a0a",
-        8 => "#914900",
-        9 => "#8a7807",
-        10 => "#436925",
-        11 => "#106e61",
-        12 => "#185421",
-        13 => "#197b94",
-        14 => "#1e5d78",
-        15 => "#54739c",
-        16 => "#054a80"
+        1   => "#777777",
+        2   => "#333333",
+        3   => "#000000",
+        4   => "#4c1f66",
+        5   => "#c23066",
+        6   => "#d4666d",
+        7   => "#6e0a0a",
+        8   => "#914900",
+        9   => "#8a7807",
+        10  => "#436925",
+        11  => "#106e61",
+        12  => "#185421",
+        13  => "#197b94",
+        14  => "#1e5d78",
+        15  => "#54739c",
+        16  => "#054a80"
     );
     $style_id = 1;
     $color_id = 1;
