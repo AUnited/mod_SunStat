@@ -26,5 +26,59 @@
 
 // no direct access
 defined('_JEXEC') or die;
-echo 'Hello world';
+$exit = "У Вас нет счетчиков";
+
+function MailRuCounter($mrid)
+{
+    $style[1] = array("base"=>600, "width"=>88, "height"=>40);
+    $style[2] = array("base"=>578, "width"=>88, "height"=>40);
+    $style[3] = array("base"=>555, "width"=>88, "height"=>40);
+    $style[4] = array("base"=>532, "width"=>88, "height"=>40);
+    $style[5] = array("base"=>509, "width"=>88, "height"=>31);
+    $style[6] = array("base"=>486, "width"=>88, "height"=>31);
+    $style[7] = array("base"=>463, "width"=>88, "height"=>31);
+    $style[8] = array("base"=>440, "width"=>88, "height"=>31);
+    $style[9] = array("base"=>417, "width"=>88, "height"=>31);
+    $style[10] = array("base"=>394, "width"=>88, "height"=>31);
+    $style[11] = array("base"=>371, "width"=>88, "height"=>18);
+    $style[12] = array("base"=>348, "width"=>88, "height"=>18);
+    $style[13] = array("base"=>325, "width"=>88, "height"=>18);
+    $style[14] = array("base"=>302, "width"=>88, "height"=>15);
+    $style[15] = array("base"=>279, "width"=>31, "height"=>38);
+    $style[16] = array("base"=>256, "width"=>31, "height"=>38);
+
+    $color = array(
+        1   =>"#000000",
+        2   =>"#000000",
+        3   =>"#000000",
+        4   =>"#000000",
+        5   =>"#000000",
+        6   =>"#000000",
+        7   =>"#000000",
+        8   =>"#000000",
+        9   =>"#000000",
+        10  =>"#000000",
+        11  =>"#000000",
+        12  =>"#000000",
+        13  =>"#000000",
+        14  =>"#000000",
+        15  =>"#000000",
+        16  =>"#000000",
+        17  =>"#000000"
+    );
+
+    $type=''; //17types*16 colors
+    return '<!-- RatingMail.ru logo --><a href="http://top.mail.ru/jump?from='.$mrid.'"><img src="//top-fwz1.mail.ru/counter?id='.$mrid.';t=479;l=1" style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a><!-- //Rating@Mail.ru logo -->';
+}
+
+function YandexCounter($ymid)
+{
+    $type=''; //88x31 80x31 80x15
+    $mode=''; //views
+    $font_color='';
+    $arrow_color='';
+    return '<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=' . $ymid . '&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/' . $ymid . '/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="' . $ymid . '" data-lang="ru" /></a> <!-- /Yandex.Metrika informer -->';
+}
+echo $exit;
+
 ?>
