@@ -5,8 +5,8 @@
 # Updated		5th January 2017
 #
 # Site: http://aunited.ru
-# Email: info@united.ru
-# Phone
+# Email: info@aunited.ru
+# Phone: null
 #
 # Joomla! is free software. This version may have been modified pursuant
 # to the GNU General Public License, and as distributed it includes or
@@ -138,23 +138,23 @@ function LICounter($ymid)
 
     switch ($color) {
         case '#ffffff': $color_id=1; break;
-        case 'e2e2e2': $color_id=2; break;
-        case 'c7c7c7': $color_id=3; break;
-        case 'a9a9a9': $color_id=4; break;
-        case '8e8e8e': $color_id=5; break;
-        case 'ffa002': $color_id=6; break;
-        case 'ff5c1b': $color_id=7; break;
-        case 'd16dd0': $color_id=8; break;
-        case '9c80c4': $color_id=9; break;
-        case 'a4b4d5': $color_id=10; break;
-        case '607fc7': $color_id=11; break;
-        case '5f99a8': $color_id=12; break;
-        case '42ac94': $color_id=13; break;
-        case '2ec460': $color_id=14; break;
-        case '58ba3f': $color_id=15; break;
-        case 'a6b345': $color_id=16; break;
-        case 'f0e110': $color_id=17; break;
-        case 'ffcab1': $color_id=18; break;
+        case '#e2e2e2': $color_id=2; break;
+        case '#c7c7c7': $color_id=3; break;
+        case '#a9a9a9': $color_id=4; break;
+        case '#8e8e8e': $color_id=5; break;
+        case '#ffa002': $color_id=6; break;
+        case '#ff5c1b': $color_id=7; break;
+        case '#d16dd0': $color_id=8; break;
+        case '#9c80c4': $color_id=9; break;
+        case '#a4b4d5': $color_id=10; break;
+        case '#607fc7': $color_id=11; break;
+        case '#5f99a8': $color_id=12; break;
+        case '#42ac94': $color_id=13; break;
+        case '#2ec460': $color_id=14; break;
+        case '#58ba3f': $color_id=15; break;
+        case '#a6b345': $color_id=16; break;
+        case '#f0e110': $color_id=17; break;
+        case '#ffcab1': $color_id=18; break;
         default: $color_id=6; break;
     }
 
