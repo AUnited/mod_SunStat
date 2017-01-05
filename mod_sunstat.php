@@ -1,11 +1,11 @@
 ﻿<?php
 # @version		$version 0.1 Amvis United Company Limited  $
-# @copyright	Copyright (C) 2016 AUnited Co Ltd. All rights reserved.
+# @copyright	Copyright (C) 2017 AUnited Co Ltd. All rights reserved.
 # @license		GNU/GPL, see LICENSE.php
-# Updated		16th October 2016
+# Updated		5th January 2017
 #
-# Site: http://amvis.ru
-# Email: info@amvis.ru
+# Site: http://aunited.ru
+# Email: info@united.ru
 # Phone
 #
 # Joomla! is free software. This version may have been modified pursuant
@@ -83,11 +83,25 @@ function MailRuCounter($mrid)
 
 function YandexCounter($ymid)
 {
-    $type=''; //88x31 80x31 80x15
-    $mode=''; //views
-    $font_color='';
-    $arrow_color='';
-    return '<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=' . $ymid . '&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/' . $ymid . '/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="' . $ymid . '" data-lang="ru" /></a> <!-- /Yandex.Metrika informer -->';
+    $type=''; //88x31 80x31 80x15 (1/2/3)
+    $mode=''; //visits/pageviews/uniques
+    $font_color=''; //black, white (0/1)
+    $arrow_color=''; // violet, gray (0/1)
+    $informer_color='';
+    $gradient_color='';
+    $gradient_enabled='';
+    $advanced = '';// 0/1
+
+    if (!$gradient_enabled){ $gradient_color .= $informer_color; }
+    if ($advanced) { $acode='class="ym-advanced-informer" data-cid="' . $ymid . '" data-lang="ru"'; }
+    if ($type = '3') { $mode = 'uniques'; }
+    switch ($type){
+        case '3': $width = '88'; $height ='31'; break;
+        case '2': $width = '80'; $height ='31'; break;
+        case '1': $width = '80'; $height ='15'; break;
+    }
+
+    return '<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=' . $ymid . '&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/' . $ymid . $type . $arrow_color . '_'.$gradient_color.'_'.$informer_color.'_'.$font_color.'_'.$mode.'" style="width:'.$width.'; height:'.$height.'; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня" '.$acode.' /></a> <!-- /Yandex.Metrika informer -->';
 }
 echo $exit;
 
