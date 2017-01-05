@@ -28,6 +28,22 @@
 defined('_JEXEC') or die;
 $exit = "У Вас нет счетчиков";
 
+/**
+ * @param $color
+ * @param $case
+ * @return string
+ */
+function ColorNormalise($color, $case)
+{
+    $color=ltrim($color, "#");
+    switch($case)
+    {
+        case 'up': $color = strtoupper($color); break;
+        case 'down': $color = strtolower($color); break;
+    }
+    return $color;
+}
+
 function MailRuCounter($mrid)
 {
     $style[1]   = array("base" => 600, "width" => 88, "height" => 40);
@@ -100,6 +116,8 @@ function YandexCounter($ymid)
         case '2': $width = '80'; $height ='31'; break;
         case '1': $width = '80'; $height ='15'; break;
     }
+    $informer_color=ColorNormalise($informer_color, up);
+    $gradient_color=ColorNormalise($gradient_color, up);
 
     return '<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=' . $ymid . '&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/' . $ymid . $type . $arrow_color . '_'.$gradient_color.'_'.$informer_color.'_'.$font_color.'_'.$mode.'" style="width:'.$width.'; height:'.$height.'; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня" '.$acode.' /></a> <!-- /Yandex.Metrika informer -->';
 }
