@@ -115,11 +115,51 @@ function YandexCounter($ymid)
         case '3': $width = '88'; $height ='31'; break;
         case '2': $width = '80'; $height ='31'; break;
         case '1': $width = '80'; $height ='15'; break;
+        default: die("Wrong counter type.");
     }
     $informer_color=ColorNormalise($informer_color, 'up');
     $gradient_color=ColorNormalise($gradient_color, 'up');
 
     return '<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=' . $ymid . '&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/' . $ymid . $type . $arrow_color . '_'.$gradient_color.'_'.$informer_color.'_'.$font_color.'_'.$mode.'" style="width:'.$width.'; height:'.$height.'; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня" '.$acode.' /></a> <!-- /Yandex.Metrika informer -->';
+}
+
+function LICounter($ymid)
+{
+    $type=0;
+    $color='';
+
+    switch ($type){
+        case ($type>=11 && $type<=22)||($type>=52 && $type<=54)||($type>=57 && $type<=58): $width = '88'; $height ='31'; break;
+        case ($type>=23 && $type<=26): $width = '88'; $height ='15'; break;
+        case ($type>=38 && $type<=46): $width = '31'; $height ='31'; break;
+        case ($type>=27 && $type<=29): $width = '88'; $height ='120'; break;
+        default: die("Unable to detect correct LICounter ID");
+    }
+
+    switch ($color) {
+        case '#ffffff': $color_id=1; break;
+        case 'e2e2e2': $color_id=2; break;
+        case 'c7c7c7': $color_id=3; break;
+        case 'a9a9a9': $color_id=4; break;
+        case '8e8e8e': $color_id=5; break;
+        case 'ffa002': $color_id=6; break;
+        case 'ff5c1b': $color_id=7; break;
+        case 'd16dd0': $color_id=8; break;
+        case '9c80c4': $color_id=9; break;
+        case 'a4b4d5': $color_id=10; break;
+        case '607fc7': $color_id=11; break;
+        case '5f99a8': $color_id=12; break;
+        case '42ac94': $color_id=13; break;
+        case '2ec460': $color_id=14; break;
+        case '58ba3f': $color_id=15; break;
+        case 'a6b345': $color_id=16; break;
+        case 'f0e110': $color_id=17; break;
+        case 'ffcab1': $color_id=18; break;
+        default: $color_id=6; break;
+    }
+
+
+    return '<!--LiveInternet logo--><a href="//www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/logo?'.$type.'.'.$color_id.'" title="LiveInternet" alt="" border="0" width="'.$width.'" height="'.$height.'"/></a><!--/LiveInternet-->';
 }
 echo $exit;
 
