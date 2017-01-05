@@ -73,11 +73,11 @@ function MailRuCounter($mrid)
     $color_hex = $color[$color_id];
     if ($style_id == "wot")
     {
-        return '<!-- Rating@Mail.ru wot-logo --><a href="http://top.mail.ru/wot?id=' . $mrid . '"><img src="//top-fwz1.mail.ru/wot-logo?id=' . $mrid . '" style="border:0;" height="87" width="214" alt="Рейтинг@Mail.ru" /></a><!-- //Rating@Mail.ru wot-logo -->';
+        return '<!-- Rating Mail.ru wot-logo --><a href="http://top.mail.ru/wot?id=' . $mrid . '"><img src="//top-fwz1.mail.ru/wot-logo?id=' . $mrid . '" style="border:0;" height="87" width="214" alt="Рейтинг Mail.ru" /></a><!-- //Rating Mail.ru wot-logo -->';
     }
     else
     {
-        return '<!-- RatingMail.ru logo --><a href="http://top.mail.ru/jump?from=' . $mrid . '"><img src="//top-fwz1.mail.ru/counter?id=' . $mrid . ';t=' . $type . ';l=1" style="border:0;" height="' . $height . '" width="' . $width . '" alt="Рейтинг@Mail.ru" /></a><!-- //Rating@Mail.ru logo -->';
+        return '<!-- Rating Mail.ru logo --><a href="http://top.mail.ru/jump?from=' . $mrid . '"><img src="//top-fwz1.mail.ru/counter?id=' . $mrid . ';t=' . $type . ';l=1" style="border:0;" height="' . $height . '" width="' . $width . '" alt="Рейтинг Mail.ru" /></a><!-- //Rating Mail.ru logo -->';
     }
 }
 
