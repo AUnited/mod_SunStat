@@ -94,7 +94,7 @@ function YandexCounter($ymid)
 
     if (!$gradient_enabled){ $gradient_color .= $informer_color; }
     if ($advanced) { $acode='class="ym-advanced-informer" data-cid="' . $ymid . '" data-lang="ru"'; }
-    if ($type = '3') { $mode = 'uniques'; }
+    if ($type == '3') { $mode = 'uniques'; }
     switch ($type){
         case '3': $width = '88'; $height ='31'; break;
         case '2': $width = '80'; $height ='31'; break;
